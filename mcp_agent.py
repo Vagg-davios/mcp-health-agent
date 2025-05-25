@@ -80,14 +80,14 @@ class HealthQueryProcessor:
             summary=True
         )
 
-        summaries = [(title, summary) for url, title, summary in search_results]
+        summaries = [(url, title, summary) for url, title, summary in search_results]
         
         print("\n=== Search Results ===")
-        for title, summary in summaries:
-            print(f"\n- {title}\n  Summary: {summary[:150]}...")
+        for url, title, summary in summaries:
+            print(f"\n- {title}\n  URL: {url}\n  Summary: {summary[:150]}...")
 
         print("\n=== Final Recommendations ===")
-        print(self.generate_final_summary(summaries))
+        print(self.generate_final_summary([(title, summary) for _, title, summary in summaries]))
 
 def main():
     if len(sys.argv) < 2:
