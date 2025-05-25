@@ -28,7 +28,7 @@ exa-py
    ```sh
    pip install -r requirements.txt
    ```
-4. **Create a `.env` file** in the project directory with your API keys:
+4. **Create a `.env` file** from the `.env.example`, in the project directory with your API keys:
    ```
    EXA_API_KEY=your_exa_api_key_here
    OPENAI_API_KEY=your_openai_api_key_here
