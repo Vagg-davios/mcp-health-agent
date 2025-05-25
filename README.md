@@ -23,11 +23,12 @@ exa-py
 
 ## Setup
 1. **Clone or download this repository.**
-2. **Install dependencies:**
+2. CD into the repo
+3. **Install dependencies:**
    ```sh
    pip install -r requirements.txt
    ```
-3. **Create a `.env` file** in the project directory with your API keys:
+4. **Create a `.env` file** in the project directory with your API keys:
    ```
    EXA_API_KEY=your_exa_api_key_here
    OPENAI_API_KEY=your_openai_api_key_here
