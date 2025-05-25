@@ -23,7 +23,7 @@ exa-py
 
 ## Setup
 1. **Clone or download this repository.**
-2. `cd` into the repo
+2. `cd` into the repo folder
 3. **Install dependencies:**
    ```sh
    pip install -r requirements.txt
